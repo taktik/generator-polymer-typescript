@@ -35,6 +35,7 @@ describe('generator-polymer-typescript:app', () => {
       'src/container/my-project/test-my-project.html',
       'src/container/my-project/test-my-project.ts',
       'src/store/index.ts',
+      'demo/serverMockup.js'
     ]);
   });
 

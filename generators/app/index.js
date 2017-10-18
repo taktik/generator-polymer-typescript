@@ -112,6 +112,12 @@ module.exports = class extends Generator {
     this.fs.write(
       this.destinationPath('src/reducer/index.ts'), ''
     );
+
+
+    this.fs.copy(
+      this.templatePath('demo/serverMockup.js'),
+      this.destinationPath('demo/serverMockup.js')
+    );
     ////////////
     //TODO move below code to sub-generators
 
