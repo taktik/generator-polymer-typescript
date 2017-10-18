@@ -22,47 +22,46 @@ yo polymer-typescript
 
 This are the main technologies selected for this project and purpose of use
 
-    __TypeScript__
+  __TypeScript__
 
-    Leverage on typeScript syntax and strong typing to create a self documented code that scale at larger teams.
-    Resource: https://www.typescriptlang.org/
+  Leverage on typeScript syntax and strong typing to create a self documented code that scale at larger teams.
+  
+  Resource: [typeScript official site](https://www.typescriptlang.org/)
 
-    __ES6 Modules__
+  __ES6 Modules__
 
-    Create standard JavaScript modules easy to reuse.
+  Create standard JavaScript modules easy to reuse.
 
-    Resource: http://2ality.com/2014/09/es6-modules-final.html
+  Resource: [es6 modules explain](http://2ality.com/2014/09/es6-modules-final.html)
 
-    __webCompoments with Polymer2__
+  __webCompoments with Polymer2__
 
-    Polymer is a JavaScript library that helps you create custom reusable HTML elements.
-    Resource: https://www.polymer-project.org
+  Polymer is a JavaScript library that helps you create custom reusable HTML elements.
+  Resource: [Polymer](https://www.polymer-project.org)
 
-    __State management with Polymer redux__
+  __State management with Polymer redux__
 
-    Redux make easy complex state management of applications.
-    Resource: https://github.com/tur-nr/polymer-redux
+  Redux make easy complex state management of applications.
+  Resource: [polymer-redux](https://github.com/tur-nr/polymer-redux)
 
-    __Routing with redux routing__
+  __Routing with redux routing__
 
-    Application routing integrated with Redux to mirror application state in the URL.
-    Resource: https://www.npmjs.com/package/redux-routing
+  Application routing integrated with Redux to mirror application state in the URL.
+  Resource: [redux-routing](https://www.npmjs.com/package/redux-routing)
 
-    __Testing with webComponent tester__
+  __Testing with webComponent tester__
 
-    Power full testing suite to test both webComponent and ES6 module.
-    Resource: https://github.com/Polymer/web-component-tester
+  Power full testing suite to test both webComponent and ES6 module.
+  Resource: [web-component-tester](https://github.com/Polymer/web-component-tester)
 
-    __Bundle with webpack__
+  __Bundle with webpack__
 
-    Tranform our typeScrip code to packaged javascript application.
-    ressource: https://webpack.js.org/
+  Tranform our typeScrip code to packaged javascript application.
+  ressource: [webpack](https://webpack.js.org/)
 
-    __Package management with npm and bower.__
+  __Package management with npm and bower.__
 
-    Basicaly Bower is use to install client side package and Npm to development dependency.
-
-    While the plan is to migrate to yarn and npm dependency, some taktik and ozone client modules are available only on npm.
+  Basicaly Bower is use to install client side package and Npm to development dependency.
 
 
 
@@ -86,42 +85,42 @@ This are the main technologies selected for this project and purpose of use
 
 ## directories
 
-|- src project source
+  |- src project source
 
-    |--- lib (API and helper) in pure ES6 TypeScript module.
+  |--- lib (API and helper) in pure ES6 TypeScript module.
 
-        Are concerned with non UI computational tasks such as API access, data treatment, communication, data storage...
+      Are concerned with non UI computational tasks such as API access, data treatment, communication, data storage...
 
-        There are stateless.
+      There are stateless.
 
-        Interact this others modules via asynchronous function call.
+      Interact this others modules via asynchronous function call.
 
-        There are build from a factory and most of the time there are singleton.
+      There are build from a factory and most of the time there are singleton.
 
-    |--- presentational reusable webComponent
+  |--- presentational reusable webComponent
 
-        Are concerned with how thinks look
+      Are concerned with how thinks look
 
-        Don’t specify how the data is loaded ore mutate
+      Don’t specify how the data is loaded ore mutate
 
-        receive data via attribute or function call.
+      receive data via attribute or function call.
 
-        Are notifying container component of change via event bubbling
+      Are notifying container component of change via event bubbling
 
-    |--- container redux-polymer components
+  |--- container redux-polymer components
 
-        Are concerned with how thinks works
+      Are concerned with how thinks works
 
-        May encapsulate other containers and presentational modules.
+      May encapsulate other containers and presentational modules.
 
-        Provide data and configuration to other containers
+      Provide data and configuration to other containers
 
-        They act as controller between other modules.
+      They act as controller between other modules.
 
 
-    |--- action, reducer and store Redux helper
+  |--- action, reducer and store Redux helper
 
-        Register Redux action and reducer to encapsulate Redux dependency outside library and presentational modules.
+      Register Redux action and reducer to encapsulate Redux dependency outside library and presentational modules.
 
 
 |- test contains test boilerplate.
