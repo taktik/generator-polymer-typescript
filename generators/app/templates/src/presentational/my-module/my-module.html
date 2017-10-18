@@ -1,5 +1,11 @@
 <dom-module id="my-module">
-    <template>
-        <h1>Details from [[myProperty]]</h1>
-    </template>
+  <template>
+    <custom-style>
+      <style is="custom-style">
+        h2{
+          color:var(--my-module-text-color, black);
+        }
+      </style>
+      <h2>Details from [[myProperty]]</h2>
+  </template>
 </dom-module>

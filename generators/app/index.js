@@ -113,6 +113,7 @@ module.exports = class extends Generator {
       this.destinationPath('src/reducer/index.ts'), ''
     );
     ////////////
+    //TODO move below code to sub-generators
 
     const appFiles = [`my-app.html`, `my-app.ts`, `test-my-app.html`, `test-my-app.ts`];
 

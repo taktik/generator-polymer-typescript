@@ -49,7 +49,7 @@ export class <%= projecNameCamelCase %> extends ReduxMixin(Polymer.Element) {}
    * @type {string}
    */
   @property({type: String})
-  myProperty: string = 'a module scaffolds with love';
+  myProperty: string = 'an application scaffolds with love';
 
   /**
    * List of key words

@@ -15,7 +15,7 @@ import {customElement, property} from 'taktik-polymer-typescript'
  *
  * Custom property | Description | Default
  * ----------------|-------------|----------
- * `--your mixin` | Add Description | `rgba(29,38,43,0.52)`
+ * `----my-module-text-color` | Color h2 text | `black`
  *
  */
 @customElement('my-module')
