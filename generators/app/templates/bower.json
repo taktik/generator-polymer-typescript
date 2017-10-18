@@ -1,0 +1,25 @@
+{
+  "name": "my-app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Hubert Jacquin <hj@taktik.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "^1.0.12",
+    "polymer": "^2.1.0",
+    "polymer-redux": "^1.0.4"
+  },
+  "devDependencies": {
+    "web-component-tester": "^6.3.0"
+  }
+}

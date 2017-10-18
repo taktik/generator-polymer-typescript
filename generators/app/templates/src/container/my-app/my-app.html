@@ -1,0 +1,14 @@
+<dom-module id="<%= projecName %>">
+    <template>
+        <h1>hello from [[myProperty]]</h1>
+        <my-module id="subModule"
+                   myProperty="hello">Click to lazy load 'my-module'</my-module>
+
+
+        <div id="requestInfo">Get list of key word</div>
+        <template is="dom-repeat" items="{{items}}">
+            <div>[[item]]</div>
+        </template>
+
+    </template>
+</dom-module>
