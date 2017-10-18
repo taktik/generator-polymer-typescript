@@ -6,7 +6,7 @@ const helpers = require('yeoman-test');
 describe('generator-polymer-typescript:app', () => {
   beforeAll(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true});
+      .withPrompts({name: "my-project"});
   });
 
   it('creates files', () => {
