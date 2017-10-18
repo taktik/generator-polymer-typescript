@@ -4,6 +4,7 @@
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-polymer-typescript using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+Require node version above 6.0.0 
 
 ```bash
 npm install -g yo
