@@ -25,7 +25,7 @@ import {MyAPI, getMyAPI} from '../../lib/my-api/my-api'
  *
  */
 @customElement('<%= projecName %>')
-export class <%= projecNameCamelCase %> extends ReduxMixin(Polymer.Element) {}
+export class <%= projecNameCamelCase %> extends ReduxMixin(Polymer.Element) {
 
   $:{
     subModule: MyModule,
