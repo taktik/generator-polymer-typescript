@@ -71,10 +71,7 @@ module.exports = {
             from: path.resolve(__dirname, 'bower_components/webcomponentsjs/*.js'),
             to: 'bower_components/webcomponentsjs/[name].[ext]'
         }]),
-        new CopyWebpackPlugin([{
-            from: path.resolve(__dirname, 'config/conf.ozone.json'),
-            to: 'conf.ozone.json'
-        }]),
+
         new Clean(['build']),
     ],
     devServer: {

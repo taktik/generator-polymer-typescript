@@ -94,12 +94,16 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('src/index.ts'),
       this.destinationPath('src/index.ts'),
-      {projecName: this.projectName},
+      {projecName: this.projectName}
     );
 
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('src/index.ejs'),
-      this.destinationPath('src/index.ejs')
+      this.destinationPath('src/index.ejs'),
+      {
+        projecName: this.projectName,
+        src: '<%= htmlWebpackPlugin.files.js[0] %>\''
+      }
     );
     this.fs.copy(
       this.templatePath('src/store/index.ts'),

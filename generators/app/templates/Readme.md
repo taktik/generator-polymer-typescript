@@ -5,7 +5,7 @@ To provide a lightweights but powerful web app framework.
 
 ## stack
 
-This are the main technologies selected for this project and purpose of use
+These are the main technologies selected for this project and purpose of use
 
   __TypeScript__
 
@@ -15,7 +15,7 @@ This are the main technologies selected for this project and purpose of use
 
   __ES6 Modules__
 
-  Create standard JavaScript modules easy to reuse.
+  Create standard JavaScript modules that are easy to reuse.
 
   Resource: [es6 modules explain](http://2ality.com/2014/09/es6-modules-final.html)
 
@@ -46,7 +46,8 @@ This are the main technologies selected for this project and purpose of use
 
   __Package management with npm and bower.__
 
-  Basicaly Bower is use to install client side package and Npm to development dependency.
+  Bower is used to install client side package and Npm mainly to development dependency.
+  
 
 
 
@@ -76,19 +77,19 @@ This are the main technologies selected for this project and purpose of use
 
       Are concerned with non UI computational tasks such as API access, data treatment, communication, data storage...
 
-      There are stateless.
+      They are stateless.
 
-      Interact this others modules via asynchronous function call.
+      Interact with others modules via asynchronous function calls.
 
-      There are build from a factory and most of the time there are singleton.
+      They are built from a factory and most of the time They are singletons.
 
   |--- presentational reusable webComponent
 
       Are concerned with how thinks look
 
-      Don’t specify how the data is loaded ore mutate
+      Don’t specify how the data is loaded or mutated
 
-      receive data via attribute or function call.
+      receive data via attributes or function calls.
 
       Are notifying container component of change via event bubbling
 
@@ -114,8 +115,6 @@ This are the main technologies selected for this project and purpose of use
 
 |- types typing
     declare files for modules where declaration is missing.
-
-
 
 
 

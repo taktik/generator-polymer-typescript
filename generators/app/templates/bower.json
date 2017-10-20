@@ -1,9 +1,7 @@
 {
-  "name": "my-app",
+  "name": "",
   "description": "",
-  "main": "index.js",
   "authors": [
-    "Hubert Jacquin <hj@taktik.com>"
   ],
   "license": "ISC",
   "homepage": "",

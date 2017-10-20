@@ -1,6 +1,6 @@
 import {<%= projecNameCamelCase %>} from './<%= projecName %>'
-import './my-app'
-import './test-my-app.html'
+import './<%= projecName %>'
+import './test-<%= projecName %>.html'
 
 declare function fixture<T>(element: string):T
 
