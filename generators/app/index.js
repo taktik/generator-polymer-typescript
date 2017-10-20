@@ -55,11 +55,11 @@ module.exports = class extends Generator {
       this.destinationPath('webpack.test.js')
     );
     this.fs.copy(
-      this.templatePath('.gitignore'),
+      this.templatePath('git_ignore'),
       this.destinationPath('.gitignore')
     );
     this.fs.copy(
-      this.templatePath('.npmignore'),
+      this.templatePath('npm_ignore'),
       this.destinationPath('.npmignore')
     );
     this.fs.copy(
