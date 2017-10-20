@@ -102,7 +102,7 @@ module.exports = class extends Generator {
       this.destinationPath('src/index.ejs'),
       {
         projecName: this.projectName,
-        src: '<%= htmlWebpackPlugin.files.js[0] %>\''
+        src: '<%= htmlWebpackPlugin.files.js[0] %>'
       }
     );
     this.fs.copy(

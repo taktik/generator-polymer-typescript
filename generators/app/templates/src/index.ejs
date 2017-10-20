@@ -5,7 +5,7 @@
     <title>my first polymer typescript app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<>
 
 <!--
   Use the webcomponents-loader script which will feature detect which Web
@@ -19,7 +19,7 @@
         document.addEventListener('WebComponentsReady', function componentsReady() {
             document.removeEventListener('WebComponentsReady', componentsReady, false);
             var script = document.createElement('script');
-            script.src = '<%= src %>';
+            script.src = '<%- src %>';
             var refScript = document.getElementsByTagName('script')[0];
             refScript.parentNode.insertBefore(script, refScript);
         }, false);
@@ -33,6 +33,6 @@
   so it doesn't try to insert bundle.js. We're handling loading it ourselves
   up above.
 -->
-<<%= projecName %>><<%= projecName %>>
+<<%= projecName %>></<%= projecName %>>
 </body>
 </html>
