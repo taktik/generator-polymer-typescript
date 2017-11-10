@@ -77,14 +77,14 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('test/test.ts'),
       this.destinationPath('test/test.ts'),
-      {projecName: this.projectName},
+      {projecName: this.projectName}
     );
     this.fs.writeJSON(
       this.destinationPath('test/modules.json'),
       [
         {module: this.projectName, dir: `src/container/${this.projectName}`},
         {module: "my-module", dir: `src/presentational/my-module`},
-        {module: "my-api", dir: `src/lib/my-api`},
+        {module: "my-api", dir: `src/lib/my-api`}
       ]
     );
     this.fs.copy(
@@ -133,7 +133,7 @@ module.exports = class extends Generator {
         this.destinationPath(`src/container/${this.projectName}/${fileName.replace('my-app', this.projectName)}`),
         {
           projecName: this.projectName,
-          projecNameCamelCase:_.upperFirst(_.camelCase(this.projectName)),
+          projecNameCamelCase:_.upperFirst(_.camelCase(this.projectName))
         },
       );
     });
@@ -143,7 +143,7 @@ module.exports = class extends Generator {
     moduleFiles.forEach((fileName)=>{
       this.fs.copy(
         this.templatePath(`src/presentational/my-module/${fileName}`),
-        this.destinationPath(`src/presentational/my-module/${fileName}`),
+        this.destinationPath(`src/presentational/my-module/${fileName}`)
       );
     });
     const apiFiles = [`my-api.ts`, `test-my-api.ts`];
@@ -151,7 +151,7 @@ module.exports = class extends Generator {
     apiFiles.forEach((fileName)=>{
       this.fs.copy(
         this.templatePath(`src/lib/my-api/${fileName}`),
-        this.destinationPath(`src/lib/my-api/${fileName}`),
+        this.destinationPath(`src/lib/my-api/${fileName}`)
       );
     });
   }
