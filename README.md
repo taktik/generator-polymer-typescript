@@ -10,6 +10,11 @@ Require node version above 6.0.0
 npm install -g yo
 npm install -g generator-polymer-typescript
 ```
+Create a new directory for your project:
+
+```bash
+mkdir your-project-name
+```
 
 Then generate your new project:
 
