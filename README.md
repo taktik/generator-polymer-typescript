@@ -86,6 +86,8 @@ These are the main technologies selected for this project and purpose of use
 
 `npm run build:test:watch` bundle test files with webpack and watch on changes.
 
+`npm run test:persist` bundle test files with webpack and watch on changes.
+
 `npm run doc` generate project documentation with typedoc.
 
 

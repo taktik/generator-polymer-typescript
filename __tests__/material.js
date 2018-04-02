@@ -4,10 +4,10 @@ const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 const process = require('process');
 
-describe('generator-polymer-typescript:app', () => {
+describe('generator-polymer-typescript:module', () => {
   beforeAll(() => {
     return helpers
-      .run(path.join(__dirname, '../generators/app'))
+      .run(path.join(__dirname, '../generators/material'))
       .withPrompts({ name: 'my-project' });
   });
 
@@ -21,46 +21,34 @@ describe('generator-polymer-typescript:app', () => {
       '.npmignore',
       '.gitignore',
       'wct.conf.js',
-      'webpack.config.js',
       'webpack.test.js',
       'test/index.html',
       'test/test.ejs',
       'test/test.ts',
       'test/modules.json',
-      'types/polymer-redux.ts',
-      'src/index.ejs',
       'src/index.ts',
-      'src/redux/action/index.ts',
-      'src/redux/reducer/index.ts',
-      'src/redux/store/index.ts',
-      'src/container/my-project/my-project.html',
-      'src/container/my-project/my-project.ts',
-      'src/container/my-project/test-my-project.html',
-      'src/container/my-project/test-my-project.ts',
-      'src/lib/my-api/my-api.ts',
-      'src/lib/my-api/test-my-api.ts',
-      'demo/serverMockup.js'
+      'src/my-project/my-project.ts',
+      'src/my-project/test-my-project.ts',
+      'src/my-project/my-project.html',
+      'src/my-project/test-my-project.html'
     ]);
   });
 
   it('fills index.ts with project data', () => {
-    assert.fileContent('src/index.ts', 'import "./container/my-project/my-project"');
+    assert.fileContent('src/index.ts', 'import "./my-project/my-project"');
   });
   it('fills test.ts with project data', () => {
-    assert.fileContent(
-      'test/test.ts',
-      'import "./../src/container/my-project/test-my-project"'
-    );
+    assert.fileContent('test/test.ts', 'import "./../src/my-project/test-my-project"');
   });
   it('fills modules.json with project data', () => {
     assert.JSONFileContent('test/modules.json', [
-      { module: 'my-project', dir: 'src/container/my-project' }
+      { module: 'my-project', dir: 'src/my-project' }
     ]);
   });
   it('fills my-app.ts with project data', () => {
     assert.fileContent(
-      'src/container/my-project/my-project.ts',
-      'export class MyProject extends ReduxMixin(Polymer.Element)'
+      'src/my-project/my-project.ts',
+      'export class MyProject extends Polymer.Element'
     );
   });
 

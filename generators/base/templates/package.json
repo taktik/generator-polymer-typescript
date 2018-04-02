@@ -11,7 +11,7 @@
     "test:persist": "wct --skip-plugin=headless -p --configFile wct.conf.js",
     "build:test:watch": "webpack --config webpack.test.js --watch",
     "pretest": "webpack --config webpack.test.js",
-    "doc": "typedoc --entryPoint src/index.ts --out  doc/ src/"
+    "doc": "typedoc --out  doc/ "
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "global": "^4.3.2",
     "ozone-api-request": "^1.0.2",
     "redux-routing": "^0.3.3",
+    "redux-thunk": "^2.2.0",
     "reflect-metadata": "^0.1.10"
   },
   "devDependencies": {

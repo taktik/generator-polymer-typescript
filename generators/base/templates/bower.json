@@ -1,17 +1,10 @@
 {
   "name": "my-app",
   "description": "",
-  "authors": [
-  ],
+  "authors": [],
   "license": "ISC",
   "homepage": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
   "dependencies": {
     "webcomponentsjs": "^1.0.12",
     "polymer": "^2.1.0",

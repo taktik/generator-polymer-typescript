@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const _ = require('lodash');
 
-module.exports = class extends Generator {
+class ModuleGenerator extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
@@ -35,4 +35,6 @@ module.exports = class extends Generator {
       this.projectName = props.name;
     });
   }
-};
+}
+
+module.exports = ModuleGenerator;

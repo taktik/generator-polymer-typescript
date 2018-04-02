@@ -2,6 +2,7 @@
 const process = require('process');
 const mkdirp = require('mkdirp');
 const Generator = require('yeoman-generator');
+// Const ModuleGenerator = require('../module');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const _ = require('lodash');

@@ -5,7 +5,7 @@ import {customElement, property} from 'taktik-polymer-typescript'
 
 import './<%= projecName %>.html'
 
-import {ReduxMixin} from '../../store'
+import {ReduxMixin, StateType} from '../../redux/store'
 import {MyModule} from '../../presentational/my-module/my-module'
 import {MyAPI, getMyAPI} from '../../lib/my-api/my-api'
 
