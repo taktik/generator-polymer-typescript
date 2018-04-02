@@ -1,7 +1,7 @@
 import './my-api'
 import {MyAPI, getMyAPI} from './my-api'
 import * as sinon from 'sinon'
-
+declare type Done = (error?: Error)=> void
 describe('My API', function() {
     let server : sinon.SinonFakeServer ;
 
@@ -13,7 +13,7 @@ describe('My API', function() {
         server.restore();
     });
 
-    it('should request server api/info', function(done) {
+    it('should request server api/info', function(done: Done) {
         server.respondWith("GET", "api/info",
             [200, { "Content-Type": "application/json" },
                 '{ "id": 12, "info": "Hey there" }']);

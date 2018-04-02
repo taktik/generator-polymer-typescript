@@ -1,5 +1,5 @@
 import "polymer/polymer.html";
-import {Store, Action} from 'redux'
+import {Store, Action, AnyAction} from 'redux'
 import {ReduxClassConstructor} from "polymer-redux"
 import {customElement, property} from 'taktik-polymer-typescript'
 
@@ -30,7 +30,7 @@ export class <%= projecNameCamelCase %> extends ReduxMixin(Polymer.Element) {
   $:{
     subModule: MyModule,
     requestInfo: Element,
-  };
+  }| any;
 
   ready(){
     super.ready();

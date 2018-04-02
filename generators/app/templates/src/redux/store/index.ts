@@ -16,4 +16,4 @@ export const store = createStore<StateType>(
 );
 
 // Create the PolymerRedux mixin
-export const ReduxMixin = PolymerRedux.default<AnyAction, Store<StateType>, StateType>(store);
+export const ReduxMixin = PolymerRedux.default<AnyAction, Store<StateType>>(store);

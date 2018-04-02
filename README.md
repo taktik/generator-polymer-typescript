@@ -10,11 +10,13 @@ Require node version above 6.0.0
 npm install -g yo
 npm install -g generator-polymer-typescript
 ```
-Create a new directory for your project:
 
-```bash
-mkdir your-project-name
-```
+## Commands
+
+ * `yo polymer-typescript` generates a full polymer-redux typeScript project.
+ * `yo polymer-typescript:module` generates a project for pure typeScript ES6 module.
+ * `yo polymer-typescript:material` generates project with one Polymer element.
+ 
 
 Then generate your new project:
 
