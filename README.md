@@ -156,7 +156,7 @@ MIT © [hubjac1]()
 
 [npm-image]: https://badge.fury.io/js/generator-polymer-typescript.svg
 [npm-url]: https://npmjs.org/package/generator-polymer-typescript
-[travis-image]: https://travis-ci.org/taktik/generator-polymer-typescript.svg?branch=master
-[travis-url]: https://travis-ci.org/taktik/generator-polymer-typescript
+[travis-image]: https://travis-ci.org/hubjac1/generator-polymer-typescript.svg?branch=master
+[travis-url]: https://travis-ci.org/hubjac1/generator-polymer-typescript
 [daviddm-image]: https://david-dm.org/taktik/generator-polymer-typescript.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/taktik/generator-polymer-typescript
