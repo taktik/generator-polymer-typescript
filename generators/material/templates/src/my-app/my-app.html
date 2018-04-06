@@ -36,61 +36,10 @@
           border-radius:3px 3px 0 0;
           text-align:center;
         }
-        .content{
-          padding:0 1em 1em;
-        }
-        #subModule{
-          cursor:pointer;
-          margin-bottom:0.5em;
-          --my-module-text-color: #232323;
-        }
-        #subModule:hover{
-          text-shadow:    0px 0px 2px rgba(0,0,0,0.14),
-          0px 2px 2px rgba(0,0,0,0.12),
-          0px 1px 3px rgba(0,0,0,0.20);
-          transition:all .2s ease-in;
-        }
-        #requestInfo{
-          margin-top:0.5em;
-          cursor:pointer;
-        }
-        #requestInfo:hover{
-          text-shadow:    0px 0px 2px rgba(0,0,0,0.14),
-          0px 2px 2px rgba(0,0,0,0.12),
-          0px 1px 3px rgba(0,0,0,0.20);
-          transition:all .2s ease-in;
-        }
-        .items{
-          padding-left:4px;
-        }
-
-        .items:before{
-          content: ' ';
-          border-top: 1px solid #00d6b2;
-          padding-left: 8px;
-          line-height: 0;
-          bottom: -9px;
-          position: relative;
-          margin-right:4px;
-        }
-        .items:hover:before{
-          padding-left: 12px;
-          transition:all .2s ease-in;
-        }
       </style>
     </custom-style>
     <div class="container">
       <h1>Hello from <br />[[myProperty]]</h1>
-      <div class="content">
-        <my-module id="subModule"
-                   myProperty="hello">Click here to lazy load <b>'my-module'</b></my-module>
-
-
-        <div id="requestInfo">Get list of key word</div>
-        <template is="dom-repeat" items="{{items}}">
-          <div class="items">[[item]]</div>
-        </template>
-      </div>
     </div>
   </template>
 </dom-module>

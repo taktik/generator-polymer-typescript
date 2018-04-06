@@ -5,6 +5,7 @@ const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const _ = require('lodash');
+const packageHelper = require('../../utilty/packageHelper');
 
 module.exports = class extends Generator {
   constructor(args, opts) {
@@ -13,6 +14,11 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    this.fs.write(
+      this.destinationPath('package.json'),
+      packageHelper.updateDependencies(this.templatePath('package.json'))
+    );
+
     this.fs.copy(
       this.templatePath('webpack.test.template'),
       this.destinationPath('webpack.test.js')
