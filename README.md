@@ -1,7 +1,8 @@
 # generator-polymer-typescript [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/taktik/generator-polymer-typescript.svg)](https://greenkeeper.io/)
-> generator for polymer2 typescript and redux application
+generator for polymer2 typescript and redux application
+
 
 ## Installation
 

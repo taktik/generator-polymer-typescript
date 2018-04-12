@@ -11,11 +11,13 @@ class ModuleGenerator extends Generator {
     super(args, opts);
     this.projectName = opts.name;
   }
+
   writing() {
     if (process.cwd() !== this.projectName) {
       this.log(
-        `Your generator must be inside a folder named ${this
-          .projectName}\nI'll automatically create this folder.`
+        `Your generator must be inside a folder named ${
+          this.projectName
+        }\nI'll automatically create this folder.`
       );
       try {
         mkdirp(this.projectName);
@@ -29,7 +31,7 @@ class ModuleGenerator extends Generator {
 
     this.fs.copy(this.templatePath('Readme.md'), this.destinationPath('Readme.md'));
     this.fs.copy(this.templatePath('bower.json'), this.destinationPath('bower.json'));
-    this.fs.copy(this.templatePath('package.json'), this.destinationPath('package.json'));
+
     this.fs.copy(
       this.templatePath('tsconfig.json'),
       this.destinationPath('tsconfig.json')

@@ -1,5 +1,12 @@
 language: node_js
 node_js:
+  - 9
   - 8
-  - 7
-  - 6
+
+before_script:
+  - npm install -g yo
+
+script:
+- npm run test
+- npm link
+- npm run test:e2e

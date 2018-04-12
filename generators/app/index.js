@@ -5,6 +5,7 @@ const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const _ = require('lodash');
+const parseArg = require('./../../utilty/parseArg');
 
 module.exports = class extends Generator {
   prompting() {
@@ -28,7 +29,15 @@ module.exports = class extends Generator {
       }
     ];
 
-    return this.prompt(prompts).then(props => {
+    let prompt;
+    const name = parseArg.getAppName();
+
+    if (name) {
+      prompt = Promise.resolve({ name });
+    } else {
+      prompt = this.prompt(prompts);
+    }
+    return prompt.then(props => {
       this.composeWith(require.resolve('../base'), { name: props.name });
       this.composeWith(require.resolve('./compozer'), { name: props.name });
       // To access props later use this.props.someAnswer;
