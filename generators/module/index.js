@@ -1,11 +1,8 @@
 'use strict';
-const process = require('process');
-const mkdirp = require('mkdirp');
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
-const _ = require('lodash');
-const parseArg = require('./../../utilty/parseArg');
+const parseArg = require('../../utility/parseArg');
 
 class ModuleGenerator extends Generator {
   prompting() {

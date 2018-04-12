@@ -9,7 +9,7 @@
     "email": "hj@taktik.com",
     "url": ""
   },
-  "files": ["generators"],
+  "files": ["generators", "utilty"],
   "main": "generators/index.js",
   "keywords": [
     "polymer",
@@ -50,6 +50,7 @@
     "jest-cli": "^22.4.3",
     "junit-reporter": "0.0.2",
     "lint-staged": "^7.0.4",
+    "log-symbols": "^2.2.0",
     "nsp": "^3.2.1",
     "polymer-webpack-loader": "^2.0.2",
     "postcss-loader": "^2.1.3",
