@@ -47,7 +47,7 @@
     "husky": "^0.14.3",
     "include-loader": "^1.1.0-beta",
     "jest": "^22.4.3",
-    "jest-cli": "^22.4.3",
+    "jest-cli": "^23.0.1",
     "junit-reporter": "0.0.2",
     "lint-staged": "^7.0.4",
     "log-symbols": "^2.2.0",
