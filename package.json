@@ -44,7 +44,7 @@
     "file-loader": "^1.1.11",
     "html-includer-webpack-plugin": "^1.0.0-beta2",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^0.14.3",
+    "husky": "^1.1.4",
     "include-loader": "^1.1.0-beta",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
