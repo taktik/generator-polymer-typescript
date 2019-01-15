@@ -81,7 +81,7 @@
     "redux": "^3.7.2",
     "redux-routing": "^0.3.3",
     "redux-thunk": "^2.2.0",
-    "reflect-metadata": "^0.1.12",
+    "reflect-metadata": "^0.1.13",
     "yeoman-generator": "^2.0.3",
     "yosay": "^2.0.2"
   },
