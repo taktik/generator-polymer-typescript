@@ -22,7 +22,7 @@
   "devDependencies": {
     "@polymer/gen-closure-declarations": "^0.4.0",
     "@polymer/polymer": "^2.6.0",
-    "@types/core-js": "^0.9.46",
+    "@types/core-js": "^2.5.1",
     "@types/jasmine": "^2.8.6",
     "@types/reflect-metadata": "0.1.0",
     "@types/sinon": "^4.3.1",
