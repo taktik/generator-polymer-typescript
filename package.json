@@ -68,7 +68,7 @@
     "uuid": "^3.2.1",
     "wct-headless": "^2.2.2",
     "web-component-tester": "^6.5.0",
-    "webpack": "^4.5.0",
+    "webpack": "^4.36.1",
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.1",
     "yeoman-assert": "^3.1.1",
