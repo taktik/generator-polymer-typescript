@@ -77,7 +77,7 @@
   "dependencies": {
     "chalk": "^2.3.2",
     "global": "^4.3.2",
-    "ozone-api-request": "^3.0.0",
+    "ozone-api-request": "^5.0.0",
     "redux": "^3.7.2",
     "redux-routing": "^0.3.3",
     "redux-thunk": "^2.2.0",
