@@ -49,7 +49,7 @@
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
     "junit-reporter": "0.0.2",
-    "lint-staged": "^7.0.4",
+    "lint-staged": "^9.2.2",
     "log-symbols": "^2.2.0",
     "nsp": "^3.2.1",
     "polymer-webpack-loader": "^2.0.2",
