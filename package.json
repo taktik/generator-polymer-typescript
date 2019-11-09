@@ -75,7 +75,7 @@
     "yeoman-test": "^1.7.0"
   },
   "dependencies": {
-    "chalk": "^2.3.2",
+    "chalk": "^3.0.0",
     "global": "^4.3.2",
     "ozone-api-request": "^3.0.0",
     "redux": "^3.7.2",
