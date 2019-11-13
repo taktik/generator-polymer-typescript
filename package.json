@@ -26,7 +26,7 @@
     "@types/jasmine": "^2.8.6",
     "@types/reflect-metadata": "0.1.0",
     "@types/sinon": "^4.3.1",
-    "@webcomponents/shadycss": "^1.1.2",
+    "@webcomponents/shadycss": "^1.9.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-runtime": "^6.23.0",
