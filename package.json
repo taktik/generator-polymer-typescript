@@ -34,7 +34,7 @@
     "bower": "^1.8.4",
     "clean-webpack-plugin": "^0.1.19",
     "connect-history-api-fallback": "^1.5.0",
-    "copy-webpack-plugin": "^4.5.1",
+    "copy-webpack-plugin": "^5.1.0",
     "css-loader": "^0.28.10",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
