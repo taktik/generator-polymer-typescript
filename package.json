@@ -35,7 +35,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "connect-history-api-fallback": "^1.5.0",
     "copy-webpack-plugin": "^4.5.1",
-    "css-loader": "^0.28.10",
+    "css-loader": "^3.3.1",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-xo": "^0.20.1",
