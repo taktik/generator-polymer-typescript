@@ -57,7 +57,7 @@
     "prettier": "^1.11.1",
     "reflect-metadata": "^0.1.12",
     "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3",
+    "style-loader": "^1.1.0",
     "svg-inline-loader": "^0.8.0",
     "taktik-polymer-typescript": "^3.0.0",
     "ts-loader": "^4.1.0",
